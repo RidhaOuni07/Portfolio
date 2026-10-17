@@ -191,9 +191,9 @@
       "name": "Dynamic Support Vector Machine",
       "period": "09-2025 – present",
       "summary": "Dynamic SVM library including the incremental learning, decremental learning, drift aware and more ",
-      "metric": "Under developement",
+      "metric": "Under development",
       "highlights": [
-        "Under Developement."
+        "Under Development."
       ],
       "tags": ["SVM", "Incremental/ Decremental", "Drift Aware"],
       "repositoryUrl": "https://github.com/RidhaOuni07/DynamicSVM"
