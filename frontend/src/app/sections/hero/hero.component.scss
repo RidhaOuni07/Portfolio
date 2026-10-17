@@ -113,10 +113,13 @@
     radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--accent) 45%, transparent), transparent 60%),
     radial-gradient(circle at 75% 80%, color-mix(in srgb, var(--accent-2) 45%, transparent), transparent 62%),
     var(--surface-strong);
-  font-family: var(--font-mono);
-  font-size: clamp(1.9rem, 5vw, 2.7rem);
-  font-weight: 500;
-  letter-spacing: 0.06em;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
 
 .hero__stats {
