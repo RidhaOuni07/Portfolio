@@ -1,0 +1,26 @@
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <div class="container">
+    <app-section-heading
+      eyebrow="03 — Skills"
+      title="Toolbox"
+      titleId="skills-title"
+      lead="The stack I reach for across modelling, engineering and deployment."
+    />
+
+    <ul class="skills__grid">
+      @for (group of skillGroups(); track group.category; let index = $index) {
+        <li class="card skills__card" [appReveal]="index * 60">
+          <span class="skills__icon">
+            <app-icon [name]="iconFor(group.icon)" />
+          </span>
+          <h3 class="skills__title">{{ group.category }}</h3>
+          <ul class="chip-list">
+            @for (skill of group.skills; track skill) {
+              <li class="chip">{{ skill }}</li>
+            }
+          </ul>
+        </li>
+      }
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,79 @@
+@let profile = person();
+
+<section id="top" class="hero" aria-labelledby="hero-name">
+  <div class="container hero__grid">
+    <div class="hero__intro" appReveal>
+      <p class="hero__eyebrow">
+        <span class="hero__dot" aria-hidden="true"></span>
+        Open to research collaborations
+      </p>
+
+      <h1 id="hero-name" class="hero__name">{{ profile?.name ?? 'Ridha Ouni' }}</h1>
+
+      <p class="hero__role">
+        <span class="gradient-text">{{ profile?.title }}</span>
+      </p>
+      <p class="hero__tagline">{{ profile?.tagline }}</p>
+
+      <ul class="hero__meta">
+        @if (profile?.location) {
+          <li><app-icon name="location" /> {{ profile?.location }}</li>
+        }
+        @if (profile?.email) {
+          <li>
+            <app-icon name="mail" />
+            <a [href]="'mailto:' + profile?.email">{{ profile?.email }}</a>
+          </li>
+        }
+        @if (profile?.phone) {
+          <li><app-icon name="phone" /> {{ profile?.phone }}</li>
+        }
+      </ul>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contact">
+          <app-icon name="mail" />
+          Get in touch
+        </a>
+        <a class="btn" href="#projects">
+          <app-icon name="sparkle" />
+          See my work
+        </a>
+        <a class="btn" href="Ridha_Ouni_CV.pdf" download="Ridha_Ouni_CV.pdf">
+          <app-icon name="download" />
+          Download CV
+        </a>
+      </div>
+
+      <ul class="hero__socials">
+        @for (social of profile?.socials ?? []; track social.url) {
+          <li>
+            <a [href]="social.url" target="_blank" rel="noopener noreferrer">
+              <app-icon [name]="iconFor(social.icon)" />
+              {{ social.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div class="hero__aside" appReveal="120">
+      <div class="hero__avatar" aria-hidden="true">
+        <span>{{ initials() }}</span>
+      </div>
+
+      <ul class="hero__stats">
+        @for (highlight of profile?.highlights ?? []; track highlight.label) {
+          <li class="card hero__stat">
+            <strong>{{ highlight.value }}</strong>
+            <span>{{ highlight.label }}</span>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#about">
+    <app-icon name="arrow-down" label="Scroll to the about section" />
+  </a>
+</section>

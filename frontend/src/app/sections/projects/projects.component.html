@@ -1,0 +1,69 @@
+<section id="projects" class="section" aria-labelledby="projects-title">
+  <div class="container">
+    <app-section-heading
+      eyebrow="04 — Projects"
+      title="Selected work"
+      titleId="projects-title"
+      lead="Research-driven builds spanning computer vision, medical imaging and speech."
+    />
+
+    @if (filters().length > 1) {
+      <div class="projects__filters" role="group" aria-label="Filter projects by technology">
+        @for (filter of filters(); track filter) {
+          <button
+            type="button"
+            class="chip projects__filter"
+            [class.is-active]="activeFilter() === filter"
+            [attr.aria-pressed]="activeFilter() === filter"
+            (click)="select(filter)"
+          >
+            {{ filter }}
+          </button>
+        }
+      </div>
+    }
+
+    <ul class="projects__grid">
+      @for (project of visibleProjects(); track project.id; let index = $index) {
+        <li class="card projects__card" [appReveal]="index * 70">
+          <header class="projects__head">
+            <h3 class="projects__name">{{ project.name }}</h3>
+            <p class="projects__period">{{ project.period }}</p>
+          </header>
+
+          <p class="projects__summary">{{ project.summary }}</p>
+
+          @if (project.metric) {
+            <p class="projects__metric">
+              <app-icon name="check" />
+              {{ project.metric }}
+            </p>
+          }
+
+          <ul class="projects__highlights">
+            @for (highlight of project.highlights; track highlight) {
+              <li>{{ highlight }}</li>
+            }
+          </ul>
+
+          <footer class="projects__footer">
+            <ul class="chip-list">
+              @for (tag of project.tags; track tag) {
+                <li class="chip">{{ tag }}</li>
+              }
+            </ul>
+
+            @if (project.repositoryUrl) {
+              <a class="projects__link" [href]="project.repositoryUrl" target="_blank" rel="noopener noreferrer">
+                Code
+                <app-icon name="external" />
+              </a>
+            }
+          </footer>
+        </li>
+      } @empty {
+        <li class="projects__empty">No project matches this filter yet.</li>
+      }
+    </ul>
+  </div>
+</section>

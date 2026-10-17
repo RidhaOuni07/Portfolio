@@ -1,0 +1,58 @@
+.education__list {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.education__item {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.education__period {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding-top: 0.15rem;
+}
+
+.education__degree {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.education__school {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.education__thesis {
+  margin: 0 0 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.93rem;
+}
+
+.education__highlights {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.93rem;
+}
+
+.education__highlights li::marker {
+  color: var(--accent-3);
+}
+
+@media (max-width: 720px) {
+  .education__item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,37 @@
+<section id="education" class="section" aria-labelledby="education-title">
+  <div class="container">
+    <app-section-heading
+      eyebrow="05 — Education"
+      title="Academic background"
+      titleId="education-title"
+      lead="Telecommunications engineering, dual master's degrees, and ongoing doctoral research on federated learning for 6G."
+    />
+
+    <ul class="education__list">
+      @for (item of education(); track item.id; let index = $index) {
+        <li class="card education__item" [appReveal]="index * 60">
+          <div class="education__period">{{ item.period }}</div>
+
+          <div class="education__body">
+            <h3 class="education__degree">{{ item.degree }}</h3>
+            <p class="education__school">
+              {{ item.institution }} <span aria-hidden="true">·</span> {{ item.location }}
+            </p>
+
+            @if (item.thesis) {
+              <p class="education__thesis"><strong>Thesis:</strong> {{ item.thesis }}</p>
+            }
+
+            @if (item.highlights.length) {
+              <ul class="education__highlights">
+                @for (highlight of item.highlights; track highlight) {
+                  <li>{{ highlight }}</li>
+                }
+              </ul>
+            }
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="#top" (click)="closeMenu()">
+      <span class="nav__mark" aria-hidden="true">RO</span>
+      <span class="nav__brand-text">Ridha&nbsp;Ouni</span>
+    </a>
+
+    <button
+      type="button"
+      class="nav__burger"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="primary-navigation"
+      (click)="toggleMenu()"
+    >
+      <span class="visually-hidden">{{ menuOpen() ? 'Close menu' : 'Open menu' }}</span>
+      <span class="nav__burger-bars" [class.is-open]="menuOpen()" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-navigation" class="nav__links" [class.is-open]="menuOpen()" aria-label="Sections">
+      <ul>
+        @for (item of items; track item.id) {
+          <li>
+            <a
+              [href]="'#' + item.id"
+              [class.is-active]="activeId() === item.id"
+              [attr.aria-current]="activeId() === item.id ? 'true' : null"
+              (click)="closeMenu()"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+
+      <button type="button" class="nav__theme" (click)="toggleTheme()">
+        <app-icon [name]="themeIcon()" [label]="themeLabel()" />
+      </button>
+    </nav>
+  </div>
+</header>

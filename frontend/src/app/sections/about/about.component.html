@@ -1,0 +1,32 @@
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="container">
+    <app-section-heading eyebrow="01 — About" title="Profile" titleId="about-title" />
+
+    <div class="about__grid">
+      <p class="about__summary" appReveal>{{ person()?.summary }}</p>
+
+      <div class="about__side">
+        <div class="card" appReveal="80">
+          <h3 class="about__card-title">Languages</h3>
+          <ul class="about__languages">
+            @for (language of languages(); track language.name) {
+              <li>
+                <span>{{ language.name }}</span>
+                <span class="chip">{{ language.level }}</span>
+              </li>
+            }
+          </ul>
+        </div>
+
+        <div class="card" appReveal="160">
+          <h3 class="about__card-title">Beyond work</h3>
+          <ul class="chip-list">
+            @for (interest of interests(); track interest) {
+              <li class="chip">{{ interest }}</li>
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

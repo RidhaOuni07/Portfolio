@@ -1,0 +1,115 @@
+@let profile = person();
+
+<section id="contact" class="section" aria-labelledby="contact-title">
+  <div class="container">
+    <app-section-heading
+      eyebrow="07 — Contact"
+      title="Let's talk"
+      titleId="contact-title"
+      lead="Research collaborations, data science roles or a quick question. Messages land straight in my inbox."
+    />
+
+    <div class="contact__grid">
+      <div class="contact__details" appReveal>
+        <ul class="contact__list">
+          @if (profile?.email) {
+            <li>
+              <app-icon name="mail" />
+              <a [href]="'mailto:' + profile?.email">{{ profile?.email }}</a>
+            </li>
+          }
+          @if (profile?.phone) {
+            <li><app-icon name="phone" /> {{ profile?.phone }}</li>
+          }
+          @if (profile?.location) {
+            <li><app-icon name="location" /> {{ profile?.location }}</li>
+          }
+        </ul>
+
+        <ul class="contact__socials">
+          @for (social of profile?.socials ?? []; track social.url) {
+            <li>
+              <a class="btn" [href]="social.url" target="_blank" rel="noopener noreferrer">
+                <app-icon [name]="iconFor(social.icon)" />
+                {{ social.label }}
+              </a>
+            </li>
+          }
+        </ul>
+      </div>
+
+      <form class="card contact__form" [formGroup]="form" (ngSubmit)="submit()" novalidate appReveal="100">
+        <div class="contact__row">
+          <div class="contact__field">
+            <label for="contact-name">Name</label>
+            <input
+              id="contact-name"
+              type="text"
+              formControlName="name"
+              autocomplete="name"
+              [attr.aria-invalid]="showError('name')"
+              [attr.aria-describedby]="showError('name') ? 'contact-name-error' : null"
+            />
+            @if (showError('name')) {
+              <p class="contact__error" id="contact-name-error">{{ errorFor('name') }}</p>
+            }
+          </div>
+
+          <div class="contact__field">
+            <label for="contact-email">Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              formControlName="email"
+              autocomplete="email"
+              [attr.aria-invalid]="showError('email')"
+              [attr.aria-describedby]="showError('email') ? 'contact-email-error' : null"
+            />
+            @if (showError('email')) {
+              <p class="contact__error" id="contact-email-error">{{ errorFor('email') }}</p>
+            }
+          </div>
+        </div>
+
+        <div class="contact__field">
+          <label for="contact-subject">Subject <span class="contact__optional">(optional)</span></label>
+          <input id="contact-subject" type="text" formControlName="subject" />
+          @if (showError('subject')) {
+            <p class="contact__error">{{ errorFor('subject') }}</p>
+          }
+        </div>
+
+        <div class="contact__field">
+          <label for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            rows="5"
+            formControlName="message"
+            [attr.aria-invalid]="showError('message')"
+            [attr.aria-describedby]="showError('message') ? 'contact-message-error' : null"
+          ></textarea>
+          @if (showError('message')) {
+            <p class="contact__error" id="contact-message-error">{{ errorFor('message') }}</p>
+          }
+        </div>
+
+        <div class="contact__submit">
+          <button type="submit" class="btn btn--primary" [disabled]="status() === 'sending'">
+            {{ status() === 'sending' ? 'Sending…' : 'Send message' }}
+          </button>
+
+          @if (feedback()) {
+            <p
+              class="contact__feedback"
+              [class.is-error]="status() === 'error'"
+              role="status"
+              aria-live="polite"
+            >
+              {{ feedback() }}
+            </p>
+          }
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

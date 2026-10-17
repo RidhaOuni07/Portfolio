@@ -1,0 +1,122 @@
+.projects__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects__filter {
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.projects__filter:hover {
+  color: var(--text);
+}
+
+.projects__filter.is-active {
+  color: #06111f;
+  border-color: transparent;
+  background-image: linear-gradient(120deg, var(--accent), var(--accent-2));
+}
+
+:root[data-theme='light'] .projects__filter.is-active {
+  color: #ffffff;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.projects__card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+}
+
+.projects__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projects__name {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.projects__period {
+  margin: 0;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.projects__summary {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.projects__metric {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-3) 18%, transparent);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.projects__highlights {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.projects__highlights li::marker {
+  color: var(--accent-2);
+}
+
+.projects__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.projects__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.projects__empty {
+  color: var(--text-muted);
+  list-style: none;
+}

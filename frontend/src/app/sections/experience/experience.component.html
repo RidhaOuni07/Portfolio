@@ -1,0 +1,49 @@
+<section id="experience" class="section" aria-labelledby="experience-title">
+  <div class="container">
+    <app-section-heading
+      eyebrow="02 — Experience"
+      title="Where I have worked"
+      titleId="experience-title"
+      lead="From telecom field work to production forecasting models and federated learning research."
+    />
+
+    <ol class="timeline">
+      @for (item of experiences(); track item.id; let index = $index) {
+        <li class="timeline__item" [appReveal]="index * 70">
+          <span class="timeline__marker" [class.is-current]="item.current" aria-hidden="true"></span>
+
+          <article class="card timeline__card">
+            <header class="timeline__head">
+              <div>
+                <h3 class="timeline__role">{{ item.role }}</h3>
+                <p class="timeline__company">
+                  {{ item.company }} <span aria-hidden="true">·</span> {{ item.location }}
+                </p>
+              </div>
+              <p class="timeline__period">
+                {{ item.period }}
+                @if (item.current) {
+                  <span class="timeline__badge">Current</span>
+                }
+              </p>
+            </header>
+
+            <ul class="timeline__highlights">
+              @for (highlight of item.highlights; track highlight) {
+                <li>{{ highlight }}</li>
+              }
+            </ul>
+
+            @if (item.tags.length) {
+              <ul class="chip-list timeline__tags">
+                @for (tag of item.tags; track tag) {
+                  <li class="chip">{{ tag }}</li>
+                }
+              </ul>
+            }
+          </article>
+        </li>
+      }
+    </ol>
+  </div>
+</section>
