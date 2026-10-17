@@ -1,0 +1,294 @@
+{
+  "person": {
+    "name": "Ridha Ouni",
+    "title": "Associate Data Scientist at Infor",
+    "tagline": "Machine Learning & AI Specialist",
+    "summary": "Data Scientist with a strong engineering foundation and hands-on experience in statistical modeling, deep learning and federated learning. Currently at Infor, where I design and optimize forecasting models to improve decision-making and operational efficiency. Trained as a Telecommunications Engineer and holder of dual Master's degrees in Data Science and Information Processing, I bring both technical depth and practical problem-solving skills. Recognized for adaptability, teamwork and analytical thinking to deliver impactful, data-driven solutions.",
+    "email": "ridha.ouni.dev@gmail.com",
+    "phone": "+216 26 491 225",
+    "location": "El Aouina, Tunis, Tunisia",
+    "socials": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/ridha-ouni/", "icon": "linkedin" },
+      { "label": "GitHub", "url": "https://github.com/RidhaOuni07", "icon": "github" },
+      { "label": "Coursera", "url": "https://www.coursera.org/learner/ridha-ouni", "icon": "coursera" },
+      { "label": "Email", "url": "mailto:ridha.ouni.dev@gmail.com", "icon": "mail" }
+    ],
+    "highlights": [
+      { "value": "PhD Student", "label": "Candidate in Secure and Explainable AI" },
+      { "value": "2", "label": "Master's degrees (Tunis & Paris Cité)" },
+      { "value": "1st / 52", "label": "Telecommunications engineering class rank" },
+      { "value": "Top 5", "label": "Huawei Seeds for the Future, North Africa" }
+    ]
+  },
+  "experiences": [
+    {
+      "id": "infor-associate-data-scientist",
+      "role": "Associate Data Scientist",
+      "company": "Infor Tunisia",
+      "location": "Tunis, Tunisia",
+      "period": "04-2025 – present",
+      "current": true,
+      "highlights": [
+        "Developed statistical and machine learning models for demand forecasting.",
+        "Implemented optimization algorithms to enhance forecast accuracy.",
+        "Collaborated closely with the team to drive improvements and ensure alignment."
+      ],
+      "tags": ["Demand Forecasting", "Statistical Modeling", "Optimization", "Python"]
+    },
+    {
+      "id": "eptunis-ai-research-intern",
+      "role": "AI Research Intern (Master's Degree Thesis)",
+      "company": "Tunisia Polytechnic School",
+      "location": "Tunis, Tunisia",
+      "period": "08-2024 – 10-2024",
+      "current": false,
+      "highlights": [
+        "Used deep learning models and federated learning techniques for the early diagnosis of diabetic retinopathy.",
+        "Leveraged transfer learning in CNN-based architectures.",
+        "Applied several aggregation strategies, including FedAvg and FedProx.",
+        "Integrated AI explainability tools such as LIME and SHAP to improve model transparency and interpretability."
+      ],
+      "tags": ["Federated Learning", "FedAvg", "FedProx", "Transfer Learning", "LIME", "SHAP"]
+    },
+    {
+      "id": "infor-data-science-intern",
+      "role": "Data Science Intern (End of Studies)",
+      "company": "Infor Tunisia",
+      "location": "Tunis, Tunisia",
+      "period": "02-2024 – 06-2024",
+      "current": false,
+      "highlights": [
+        "Developed a controller to automate forecasting engine selection using Java.",
+        "Conducted thorough testing and validation of the forecasting models to ensure accuracy and reliability in predictions.",
+        "Collaborated with team members and provided recommendations for product improvements."
+      ],
+      "tags": ["Java", "Forecasting", "Automation", "Model Validation"]
+    },
+    {
+      "id": "talan-software-engineering-intern",
+      "role": "Software Engineering Intern",
+      "company": "Talan",
+      "location": "Tunis, Tunisia",
+      "period": "06-2023 – 08-2023",
+      "current": false,
+      "highlights": [
+        "Spearheaded the 'Bricolini' project, focused on reducing DIY waste and promoting environmental sustainability.",
+        "Led the design and development of a cross-platform mobile application using the Flutter framework.",
+        "Implemented advanced computer vision techniques such as object detection and image classification, with the best model reaching 83% accuracy."
+      ],
+      "tags": ["Flutter", "Computer Vision", "Object Detection", "Sustainability"]
+    },
+    {
+      "id": "tunisie-telecom-summer-intern",
+      "role": "Summer Intern",
+      "company": "Tunisie Télécom",
+      "location": "Medenine, Tunisia",
+      "period": "08-2022",
+      "current": false,
+      "highlights": [
+        "Recovered and resolved nearly 95% of ADSL disturbances, ensuring minimal downtime and improving service reliability.",
+        "Gained hands-on experience with optical fiber technology through installation and maintenance tasks."
+      ],
+      "tags": ["Telecommunications", "ADSL", "Optical Fiber"]
+    }
+  ],
+  "education": [
+    {
+      "id": "phd-supcom",
+      "degree": "PHD Degree",
+      "institution": "Higher Institute Of Communication",
+      "location": "Tunis, Tunisia",
+      "period": "09-2026 – present",
+      "thesis": "Secure and Explainable AI for Early Detection of ADHD",
+      "highlights": []
+    },
+    {
+      "id": "master-paris-cite",
+      "degree": "Master's Degree, Sciences, Technologies, Santé — Mention Informatique",
+      "institution": "Université Paris Cité",
+      "location": "Paris, France (remote)",
+      "period": "09-2023 – 12-2024",
+      "thesis": null,
+      "highlights": [
+        "Joint degree with the Master's program at the National School of Engineering of Tunis.",
+        "Graduated with High Distinction."
+      ]
+    },
+    {
+      "id": "master-ticv-enit",
+      "degree": "Master's Degree, Information Processing and Complexity of Living (TICV)",
+      "institution": "National School of Engineering of Tunis",
+      "location": "Tunis, Tunisia",
+      "period": "09-2023 – 12-2024",
+      "thesis": "Federated Learning for Early Diabetic Retinopathy Diagnosis",
+      "highlights": [
+        "Ranked 1st out of 20 students."
+      ]
+    },
+    {
+      "id": "engineering-enit",
+      "degree": "Telecommunications Engineering Degree",
+      "institution": "National School of Engineering of Tunis",
+      "location": "Tunis, Tunisia",
+      "period": "09-2021 – 06-2024",
+      "thesis": null,
+      "highlights": [
+        "Ranked 1st out of 52 students.",
+        "Specialized in Data Science for Embedded Communications (DASEC).",
+        "Final year project: Forecasting Engine Automation (Infor Tunisia)."
+      ]
+    },
+    {
+      "id": "prep-monastir",
+      "degree": "Two-year undergraduate program in Physics-Chemistry (national competitive entrance exam to graduate engineering schools)",
+      "institution": "University of Monastir",
+      "location": "Monastir, Tunisia",
+      "period": "09-2019 – 06-2021",
+      "thesis": null,
+      "highlights": [
+        "Ranked 113 out of 1300."
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "category": "Programming Languages",
+      "icon": "code",
+      "skills": ["Python", "C", "C++", "Java"]
+    },
+    {
+      "category": "Data Science & Analytics",
+      "icon": "chart",
+      "skills": ["NumPy", "pandas", "SQL / PL-SQL", "Power BI", "Tableau"]
+    },
+    {
+      "category": "Machine / Deep Learning & AI",
+      "icon": "brain",
+      "skills": [
+        "TensorFlow",
+        "PyTorch",
+        "Keras",
+        "Scikit-learn",
+        "OpenCV",
+        "Federated Learning (Flower, FedLab)",
+        "AI Explainability (LIME, SHAP)"
+      ]
+    },
+    {
+      "category": "Software, Backend, Mobile & Web",
+      "icon": "server",
+      "skills": ["Spring Boot", "JEE", "Flask", "MongoDB", "Flutter", "Angular"]
+    },
+    {
+      "category": "Infrastructure",
+      "icon": "cloud",
+      "skills": ["Linux", "Docker", "Kubernetes", "Git"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "dynamic_svm",
+      "name": "Dynamic Support Vector Machine",
+      "period": "09-2025 – present",
+      "summary": "Dynamic SVM library including the incremental learning, decremental learning, drift aware and more ",
+      "metric": "Under developement",
+      "highlights": [
+        "Under Developement."
+      ],
+      "tags": ["SVM", "Incremental/ Decremental", "Drift Aware"],
+      "repositoryUrl": "https://github.com/RidhaOuni07/DynamicSVM"
+    },
+    {
+      "id": "ai-autonomous-cars",
+      "name": "Artificial Intelligence in the Service of Autonomous Cars",
+      "period": "09-2023 – 12-2023",
+      "summary": "Perception and antenna-design pipeline for autonomous driving, combining evolutionary optimization with modern object detection.",
+      "metric": "87% accuracy",
+      "highlights": [
+        "Used a genetic algorithm to design a bidirectional hyperdirective antenna network.",
+        "Used YOLOv8 for object detection and instance-level segmentation on the KITTI dataset.",
+        "Reached an accuracy of 87%."
+      ],
+      "tags": ["YOLOv8", "Genetic Algorithm", "KITTI", "Segmentation"],
+      "repositoryUrl": "https://github.com/RidhaOuni07"
+    },
+    {
+      "id": "chest-xray-pneumonia",
+      "name": "Chest X-ray (Pneumonia) Classification with Transfer Learning",
+      "period": "06-2023",
+      "summary": "Comparative study of CNN backbones for pneumonia detection on a small medical imaging dataset.",
+      "metric": "VGG > ResNet on small data",
+      "highlights": [
+        "Applied transfer learning across two CNN families: ResNet and VGG.",
+        "Found VGG to outperform ResNet on small datasets."
+      ],
+      "tags": ["Transfer Learning", "CNN", "VGG", "ResNet", "Medical Imaging"],
+      "repositoryUrl": "https://github.com/RidhaOuni07"
+    },
+    {
+      "id": "lip-reading-tunisian",
+      "name": "Lip Reading of the Tunisian Dialect using Machine Learning",
+      "period": "12-2022 – 03-2023",
+      "summary": "End-to-end pipeline from dataset collection to classification for visual speech recognition in Tunisian Arabic.",
+      "metric": "42% accuracy",
+      "highlights": [
+        "Collected and preprocessed an original Tunisian video database.",
+        "Extracted features with OpenCV and DCT, then applied feature selection techniques.",
+        "Applied machine learning models such as KNN and Random Forest.",
+        "Attained an accuracy of 42%."
+      ],
+      "tags": ["OpenCV", "DCT", "KNN", "Random Forest", "Dataset Building"],
+      "repositoryUrl": "https://github.com/RidhaOuni07"
+    }
+  ],
+  "certificates": [
+    { "name": "Deep Learning Specialization", "issuer": "DeepLearning.AI", "url": null },
+    { "name": "AWS Fundamentals Specialization", "issuer": "Amazon Web Services", "url": null },
+    { "name": "CDOSS Machine Learning with Python", "issuer": "CDOSS", "url": null },
+    { "name": "Fundamentals of Deep Learning", "issuer": "NVIDIA", "url": null },
+    { "name": "Building Transformer-Based Natural Language Processing Applications", "issuer": "NVIDIA", "url": null },
+    { "name": "Programming Foundations with JavaScript, HTML and CSS", "issuer": "Duke University", "url": null },
+    { "name": "Foundations of Project Management", "issuer": "Google", "url": null },
+    { "name": "Interfacing with the Arduino", "issuer": "University of California, Irvine", "url": null }
+  ],
+  "awards": [
+    { "title": "Achievement Award for Excellence", "issuer": "University of Tunis El Manar", "date": "05-07-2024" },
+    { "title": "Talan Tunisie Summer Camp — Top Performer", "issuer": "Talan", "date": "31-07-2023" }
+  ],
+  "volunteering": [
+    {
+      "id": "huawei-seeds",
+      "organization": "Huawei",
+      "role": "Seeds for the Future 2024 candidate",
+      "location": "Essaouira, Morocco",
+      "period": "07-2024",
+      "highlights": [
+        "Top 5 out of 28 teams from the North Africa region.",
+        "Learned and applied entrepreneurship and innovation skills."
+      ]
+    },
+    {
+      "id": "ieee-enit-sb",
+      "organization": "IEEE ENIT Student Branch",
+      "role": "Active member, then project manager",
+      "location": "Tunis, Tunisia",
+      "period": "10-2021 – 05-2023",
+      "highlights": [
+        "Contributed to the success of various events as part of the logistics and organization team.",
+        "Appointed ambassador and organizer of the IEEE 16th event.",
+        "Developed strong organizational, communication and leadership skills."
+      ]
+    }
+  ],
+  "languages": [
+    { "name": "Arabic", "level": "Native" },
+    { "name": "French", "level": "B2" },
+    { "name": "English", "level": "B2" },
+    { "name": "German", "level": "Beginner" }
+  ],
+  "interests": [
+    "Competitive programming",
+    "Reading scientific papers",
+    "Cooking Tunisian food"
+  ]
+}
