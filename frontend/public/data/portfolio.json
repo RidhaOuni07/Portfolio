@@ -76,7 +76,8 @@
         "Led the design and development of a cross-platform mobile application using the Flutter framework.",
         "Implemented advanced computer vision techniques such as object detection and image classification, with the best model reaching 83% accuracy."
       ],
-      "tags": ["Flutter", "Computer Vision", "Object Detection", "Sustainability"]
+      "tags": ["Flutter", "Computer Vision", "Object Detection", "Sustainability"],
+      "repositoryUrl": "https://github.com/RidhaOuni07/Bricolini"
     },
     {
       "id": "tunisie-telecom-summer-intern",
