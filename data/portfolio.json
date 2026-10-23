@@ -210,7 +210,7 @@
         "Reached an accuracy of 87%."
       ],
       "tags": ["YOLOv8", "Genetic Algorithm", "KITTI", "Segmentation"],
-      "repositoryUrl": "https://github.com/RidhaOuni07"
+      "repositoryUrl": "https://github.com/RidhaOuni07/ArtificialIntelligenceForTheServiceOfAutonoumosCars"
     },
     {
       "id": "chest-xray-pneumonia",
@@ -219,11 +219,12 @@
       "summary": "Comparative study of CNN backbones for pneumonia detection on a small medical imaging dataset.",
       "metric": "VGG > ResNet on small data",
       "highlights": [
+        "One of the first projects in my journey with deep learning.",
         "Applied transfer learning across two CNN families: ResNet and VGG.",
         "Found VGG to outperform ResNet on small datasets."
       ],
       "tags": ["Transfer Learning", "CNN", "VGG", "ResNet", "Medical Imaging"],
-      "repositoryUrl": "https://github.com/RidhaOuni07"
+      "repositoryUrl": "https://github.com/RidhaOuni07/ChestXRayPneumoniaClassifier"
     },
     {
       "id": "lip-reading-tunisian",
