@@ -34,6 +34,7 @@ export interface Experience {
   current: boolean;
   highlights: string[];
   tags: string[];
+  repositoryUrl?: string | null;
 }
 
 export interface Education {
@@ -42,6 +43,7 @@ export interface Education {
   institution: string;
   location: string;
   period: string;
+  current: boolean;
   thesis?: string | null;
   highlights: string[];
 }
@@ -101,5 +103,4 @@ export interface Portfolio {
   languages: Language[];
   interests: string[];
 }
-
 

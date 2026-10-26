@@ -100,6 +100,7 @@
       "institution": "Higher Institute Of Communication",
       "location": "Tunis, Tunisia",
       "period": "09-2026 – present",
+      "current": true,
       "thesis": "Secure and Explainable AI for Early Detection of ADHD",
       "highlights": []
     },
@@ -109,6 +110,7 @@
       "institution": "Université Paris Cité",
       "location": "Paris, France (remote)",
       "period": "09-2023 – 12-2024",
+      "current": false,
       "thesis": null,
       "highlights": [
         "Joint degree with the Master's program at the National School of Engineering of Tunis.",
@@ -121,6 +123,7 @@
       "institution": "National School of Engineering of Tunis",
       "location": "Tunis, Tunisia",
       "period": "09-2023 – 12-2024",
+      "current": false,
       "thesis": "Federated Learning for Early Diabetic Retinopathy Diagnosis",
       "highlights": [
         "Ranked 1st out of 20 students."
@@ -132,6 +135,7 @@
       "institution": "National School of Engineering of Tunis",
       "location": "Tunis, Tunisia",
       "period": "09-2021 – 06-2024",
+      "current": false,
       "thesis": null,
       "highlights": [
         "Ranked 1st out of 52 students.",
@@ -145,6 +149,7 @@
       "institution": "University of Monastir",
       "location": "Monastir, Tunisia",
       "period": "09-2019 – 06-2021",
+      "current": false,
       "thesis": null,
       "highlights": [
         "Ranked 113 out of 1300."

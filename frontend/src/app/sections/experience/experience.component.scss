@@ -103,6 +103,19 @@
   color: var(--accent);
 }
 
-.timeline__tags {
+.timeline__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
   margin-top: 1rem;
+}
+
+.timeline__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
 }

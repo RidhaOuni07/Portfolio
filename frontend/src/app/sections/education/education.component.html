@@ -10,7 +10,12 @@
     <ul class="education__list">
       @for (item of education(); track item.id; let index = $index) {
         <li class="card education__item" [appReveal]="index * 60">
-          <div class="education__period">{{ item.period }}</div>
+          <div class="education__period">
+            @if (item.current) {
+              <span class="education__current" aria-hidden="true"></span>
+            }
+            {{ item.period }}
+          </div>
 
           <div class="education__body">
             <h3 class="education__degree">{{ item.degree }}</h3>

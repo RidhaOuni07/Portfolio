@@ -14,10 +14,22 @@
 }
 
 .education__period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--text-muted);
   font-family: var(--font-mono);
   font-size: 0.82rem;
   padding-top: 0.15rem;
+}
+
+.education__current {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent-3);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-3) 22%, transparent);
 }
 
 .education__degree {

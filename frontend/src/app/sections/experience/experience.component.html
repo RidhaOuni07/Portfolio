@@ -34,12 +34,28 @@
               }
             </ul>
 
-            @if (item.tags.length) {
-              <ul class="chip-list timeline__tags">
-                @for (tag of item.tags; track tag) {
-                  <li class="chip">{{ tag }}</li>
+            @if (item.tags.length || item.repositoryUrl) {
+              <footer class="timeline__footer">
+                @if (item.tags.length) {
+                  <ul class="chip-list timeline__tags">
+                    @for (tag of item.tags; track tag) {
+                      <li class="chip">{{ tag }}</li>
+                    }
+                  </ul>
                 }
-              </ul>
+
+                @if (item.repositoryUrl) {
+                  <a
+                    class="timeline__link"
+                    [href]="item.repositoryUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Code
+                    <app-icon name="external" />
+                  </a>
+                }
+              </footer>
             }
           </article>
         </li>
